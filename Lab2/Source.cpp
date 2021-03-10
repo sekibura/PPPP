@@ -1,6 +1,10 @@
 #include "function.h"
+#include <iostream>
 int main()
 {
-	Tst::start_func(0, 0, 0, 0, 0, 0);
+	int a = NULL;
+	Tst::start_func(a,0,0,0,0,0);
+	std::cout << a;
+
 	return 0;
 }

@@ -19,7 +19,7 @@ using namespace std;
 		double y = (a * f - c * e) / (a * d - c * b);
 		double x = (d * e - b * f) / (d * a - b * c);
 		cout << "2 " << x << ' ' << y;
-		return "2 " + to_string(x) + " " + to_string(y);
+		return "2 " + to_string(x) + ' ' + to_string(y);
 	
 	}
 	else if (((a*d - c * b == 0) && ((e*d - b * f != 0) || (a*f - c * e != 0))) ||
