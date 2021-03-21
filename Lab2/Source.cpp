@@ -2,9 +2,9 @@
 #include <iostream>
 int main()
 {
-	int a = NULL;
-	Tst::start_func(a,0,0,0,0,0);
-	std::cout << a;
+	
+	std::cout<<Tst::start_func(1,1,1,1,0,1);
+	
 
 	return 0;
 }

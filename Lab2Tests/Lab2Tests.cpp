@@ -58,6 +58,13 @@ namespace Lab2Tests
 
 			result = Tst::start_func(1, 1, 1, 1, 0, 0);
 			Assert::IsTrue(result == "1 " + to_string((float)(-1)) + ' ' + to_string((float)0), L"Assert 1, 1, 1, 1, 0, 0 (a / b == c / d)");
+
+
+			result = Tst::start_func(1, 1, 1, 1, 1, 0);
+			Assert::IsTrue(result == "0", L"Assert 1, 1, 1, 1, 1, 0 (a*d - c * b == 0) && (e*d - b * f != 0)");
+
+			result = Tst::start_func(1, 1, 1, 1, 0, 1);
+			Assert::IsTrue(result == "0", L"Assert 1, 1, 1, 1, 0, 1 (a*d - c * b == 0) &&  (a*f - c * e != 0)");
 		}
 
 	
